@@ -7,6 +7,7 @@ import CardOne from "../src/components/cards/CardOne";
 import rocketLogo from "../public/rocket.svg";
 import zombie from "../public/zombie.png";
 import GradientText from "../src/components/texts/GradientText";
+import ButtonHoverEffect from "../src/components/buttons/ButtonHoverEffect";
 
 export default function Home() {
   return (
@@ -24,17 +25,24 @@ export default function Home() {
           />
         </div>
 
-        <div className="mt-8 max-w-4xl mx-auto p-8 shadow-sm shadow-red-200  ">
-          <p className="text-center text-xl font-bold">Buttons</p>
-          <Button3D
-            text="WAGMI"
-            onClick={() => console.log("Button Clicked")}
-          />
+        <div className="mt-8 max-w-4xl bg-gray-800 mx-auto p-8 shadow-sm shadow-red-200 rounded-xl">
+          <p className="text-center text-white text-xl font-bold">Buttons</p>
+          <div className="grid grid-cols-3 gap-4">
+            <Button3D
+              text="WAGMI"
+              onClick={() => console.log("Button Clicked")}
+            />
 
-          <ButtonGradient
-            text="WAGMI"
-            onClick={() => console.log("Button Clicked")}
-          />
+            <ButtonGradient
+              text="WAGMI"
+              onClick={() => console.log("Button Clicked")}
+            />
+
+            <ButtonHoverEffect
+              text="WAGMI"
+              onClick={() => console.log("Button Clicked")}
+            />
+          </div>
         </div>
 
         <div className="mt-8 max-w-4xl mx-auto p-8 shadow-sm shadow-red-200  ">
