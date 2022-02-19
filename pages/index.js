@@ -1,5 +1,11 @@
 import Head from "next/head";
-import Card from "../src/components/Card";
+import Button3D from "../src/components/buttons/Button3D";
+import ButtonGradient from "../src/components/buttons/ButtonGradient";
+import Card from "../src/components/cards/Card";
+import CardOne from "../src/components/cards/CardOne";
+
+import rocketLogo from "../public/rocket.svg";
+import zombie from "../public/zombie.png";
 
 export default function Home() {
   return (
@@ -11,7 +17,37 @@ export default function Home() {
       </Head>
 
       <main>
-        <h3 className="max-w-[80rem] mx-auto p-8 text-center bg-gradient-to-tr from-purple-400 to-purple-800 bold text-4xl mt-2 text-white">LFG</h3>
+        <h3 className="max-w-[80rem] mx-auto p-8 text-center bg-gradient-to-tr from-stone-200 to-stone-500 rounded-md bold text-4xl mt-2 text-black">
+          LFG With Tailwindcss
+        </h3>
+
+        <div className="mt-8 max-w-4xl mx-auto p-8 shadow-sm shadow-red-200  ">
+          <p className="text-center text-xl font-bold">Buttons</p>
+          <Button3D
+            text="WAGMI"
+            onClick={() => console.log("Button Clicked")}
+          />
+
+          <ButtonGradient
+            text="WAGMI"
+            onClick={() => console.log("Button Clicked")}
+          />
+        </div>
+
+        <div className="mt-8 max-w-4xl mx-auto p-8 shadow-sm shadow-red-200  ">
+          <p className="text-center text-xl font-bold">Cards</p>
+          <Card
+            title="How to live"
+            description="The way you like but don't fuck others idiot."
+            imageUrl={rocketLogo}
+          />
+
+          <CardOne
+            title="What does Zombie means?"
+            description="A will-less and speechless human held to have died and been supernaturally reanimated."
+            imageUrl={zombie}
+          />
+        </div>
       </main>
     </div>
   );
