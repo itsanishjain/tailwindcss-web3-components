@@ -9,6 +9,9 @@ import zombie from "../public/zombie.png";
 import GradientText from "../src/components/texts/GradientText";
 import ButtonHoverEffect from "../src/components/buttons/ButtonHoverEffect";
 
+import CircularLoading from "../src/components/loading/CircularLoading";
+import GradientCircularLoading from "../src/components/loading/GradientCircularLoading";
+
 export default function Home() {
   return (
     <div>
@@ -20,9 +23,7 @@ export default function Home() {
 
       <main>
         <div className="max-w-[80rem] mx-auto p-8 text-center bg-gradient-to-tr from-black to-stone-700 rounded-md bold text-4xl mt-2 text-black">
-          <GradientText   
-            text="LFG With Tailwindcss"
-          />
+          <GradientText text="LFG With Tailwindcss" />
         </div>
 
         <div className="mt-8 max-w-4xl bg-gray-800 mx-auto p-8 shadow-sm shadow-red-200 rounded-xl">
@@ -61,10 +62,14 @@ export default function Home() {
         </div>
 
         <div className="mt-8 max-w-4xl mx-auto p-8 shadow-md shadow-red-200  ">
-        <p className="text-center text-xl font-bold">Texts</p>
-          <GradientText 
-            text="Tailwind Gradient Text"
-          />
+          <p className="text-center text-xl font-bold">Texts</p>
+          <GradientText text="Tailwind Gradient Text" />
+        </div>
+
+        <div className="mt-8 max-w-4xl mx-auto p-8 shadow-md shadow-red-200  ">
+          <p className="text-center text-xl font-bold">Circular progress bar</p>
+          <CircularLoading />
+          <GradientCircularLoading />
         </div>
       </main>
     </div>
