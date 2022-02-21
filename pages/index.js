@@ -6,6 +6,8 @@ import CardOne from "../src/components/cards/CardOne";
 
 import rocketLogo from "../public/rocket.svg";
 import zombie from "../public/zombie.png";
+import GradientText from "../src/components/texts/GradientText";
+import ButtonHoverEffect from "../src/components/buttons/ButtonHoverEffect";
 
 export default function Home() {
   return (
@@ -17,21 +19,30 @@ export default function Home() {
       </Head>
 
       <main>
-        <h3 className="max-w-[80rem] mx-auto p-8 text-center bg-gradient-to-tr from-stone-200 to-stone-500 rounded-md bold text-4xl mt-2 text-black">
-          LFG With Tailwindcss
-        </h3>
-
-        <div className="mt-8 max-w-4xl mx-auto p-8 shadow-sm shadow-red-200  ">
-          <p className="text-center text-xl font-bold">Buttons</p>
-          <Button3D
-            text="WAGMI"
-            onClick={() => console.log("Button Clicked")}
+        <div className="max-w-[80rem] mx-auto p-8 text-center bg-gradient-to-tr from-black to-stone-700 rounded-md bold text-4xl mt-2 text-black">
+          <GradientText   
+            text="LFG With Tailwindcss"
           />
+        </div>
 
-          <ButtonGradient
-            text="WAGMI"
-            onClick={() => console.log("Button Clicked")}
-          />
+        <div className="mt-8 max-w-4xl bg-gray-800 mx-auto p-8 shadow-sm shadow-red-200 rounded-xl">
+          <p className="text-center text-white text-xl font-bold">Buttons</p>
+          <div className="grid grid-cols-3 gap-4">
+            <Button3D
+              text="WAGMI"
+              onClick={() => console.log("Button Clicked")}
+            />
+
+            <ButtonGradient
+              text="WAGMI"
+              onClick={() => console.log("Button Clicked")}
+            />
+
+            <ButtonHoverEffect
+              text="WAGMI"
+              onClick={() => console.log("Button Clicked")}
+            />
+          </div>
         </div>
 
         <div className="mt-8 max-w-4xl mx-auto p-8 shadow-sm shadow-red-200  ">
@@ -46,6 +57,13 @@ export default function Home() {
             title="What does Zombie means?"
             description="A will-less and speechless human held to have died and been supernaturally reanimated."
             imageUrl={zombie}
+          />
+        </div>
+
+        <div className="mt-8 max-w-4xl mx-auto p-8 shadow-md shadow-red-200  ">
+        <p className="text-center text-xl font-bold">Texts</p>
+          <GradientText 
+            text="Tailwind Gradient Text"
           />
         </div>
       </main>
