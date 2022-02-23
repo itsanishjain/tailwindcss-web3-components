@@ -26,7 +26,7 @@ export default function Home() {
           <GradientText text="LFG With Tailwindcss" />
         </div>
 
-        <div className="mt-8 max-w-4xl bg-gray-800 mx-auto p-8 shadow-sm shadow-red-200 rounded-xl">
+        <div className="mt-8 max-w-4xl mx-auto p-8 shadow-sm shadow-red-200 rounded-xl">
           <p className="text-center text-white text-xl font-bold">Buttons</p>
           <div className="grid grid-cols-3 gap-4">
             <Button3D
@@ -71,6 +71,8 @@ export default function Home() {
           <CircularLoading />
           <GradientCircularLoading />
         </div>
+
+        
       </main>
     </div>
   );
