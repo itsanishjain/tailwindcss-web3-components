@@ -12,7 +12,7 @@ function FireNavbar() {
                         <div className="group">
                             <a
                                 href="#"
-                                className="flex items-center py-5 px-2 text-white transition delay-75 ease-in-out group-hover:text-gray-200"
+                                className="flex items-center py-5 px-2 text-white transition delay-75 ease-in-out group-hover:text-gray-200 "
                             >
                                 <svg
                                     className=" h-7 w-7 mr-1 text-red-700 transition delay-75 ease-in-out  group-hover:text-cyan-300"
