@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 
 function FireNavbar() {
     return (
@@ -10,10 +11,11 @@ function FireNavbar() {
                     <div className="flex space-x-4">
                         {/* logo */}
                         <div className="group">
-                            <a
-                                href="#"
+                            
+                             <a
+                                
                                 className="flex items-center py-5 px-2 text-white transition delay-75 ease-in-out group-hover:text-gray-200 "
-                            >
+                                 >   
                                 <svg
                                     className=" h-7 w-7 mr-1 text-red-700 transition delay-75 ease-in-out  group-hover:text-cyan-300"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -44,14 +46,16 @@ function FireNavbar() {
                         <div className="flex items-center space-x-1">
                             <a
                                 className="py-5 px-3 text-white hover:text-gray-200"
-                                href="">
+                                >
                                 Home
                             </a>
+
+                           <Link href ="/twitter">
                             <a
-                                className="py-5 px-3 text-white hover:text-gray-200"
-                                href="">
-                                About
+                                className="py-5 px-3 text-white hover:text-gray-200">
+                                Twitter Side-Navbar
                             </a>
+                            </Link>
                         </div>
                     </div>
 

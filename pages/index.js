@@ -12,6 +12,7 @@ import ButtonHoverEffect from "../src/components/buttons/ButtonHoverEffect";
 import CircularLoading from "../src/components/loading/CircularLoading";
 import GradientCircularLoading from "../src/components/loading/GradientCircularLoading";
 import FireNavbar from "../src/components/navigation/FireNavbar";
+import { LfgCard } from "../src/components/cards/LfgCard";
 
 export default function Home() {
   return (
@@ -47,6 +48,9 @@ export default function Home() {
 
         <div className="mt-8 max-w-4xl mx-auto p-8 shadow-sm shadow-red-200  ">
           <p className="text-center text-xl font-bold">Cards</p>
+
+         <LfgCard/>
+    
           <Card
             title="How to live"
             description="The way you like but don't fuck others idiot."
