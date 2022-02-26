@@ -11,6 +11,8 @@ import ButtonHoverEffect from "../src/components/buttons/ButtonHoverEffect";
 
 import CircularLoading from "../src/components/loading/CircularLoading";
 import GradientCircularLoading from "../src/components/loading/GradientCircularLoading";
+import FireNavbar from "../src/components/navigation/FireNavbar";
+import { LfgCard } from "../src/components/cards/LfgCard";
 
 export default function Home() {
   return (
@@ -22,9 +24,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="max-w-[80rem] mx-auto p-8 text-center bg-gradient-to-tr from-black to-stone-700 rounded-md bold text-4xl mt-2 text-black">
-          <GradientText text="LFG With Tailwindcss" />
-        </div>
+       <FireNavbar/>
 
         <div className="mt-8 max-w-4xl mx-auto p-8 shadow-sm shadow-red-200 rounded-xl">
           <p className="text-center text-white text-xl font-bold">Buttons</p>
@@ -48,6 +48,9 @@ export default function Home() {
 
         <div className="mt-8 max-w-4xl mx-auto p-8 shadow-sm shadow-red-200  ">
           <p className="text-center text-xl font-bold">Cards</p>
+
+         <LfgCard/>
+    
           <Card
             title="How to live"
             description="The way you like but don't fuck others idiot."
