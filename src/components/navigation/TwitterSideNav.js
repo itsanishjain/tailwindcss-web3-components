@@ -1,15 +1,5 @@
 import React from "react";
 import TwitterCard from "../cards/TwitterCard";
-// import {
-//   BiHome,
-//   FaHashtag,
-//   IoIosNotificationsOutline,
-//   BiMessageSquareDots,
-//   BsBookmark,
-//   BsCardList,
-//   CgProfile,
-//   CgMoreO,
-// } from "react-icons/fa";
 
 import { FaHome, FaHashtag } from "react-icons/fa";
 import { IoIosNotificationsOutline } from "react-icons/io";
@@ -22,7 +12,7 @@ export default function TwitterSideNav() {
     <>
       <div className="max-w-sm space-y-4  ">
         <TwitterCard
-          icon={<FaHome className=" text-2xl font-medium text-white" />}
+          icon={<FaHome className=" text-2xl font-medium text-blue-500" />}
           text="Home"
         />
 
@@ -68,3 +58,9 @@ export default function TwitterSideNav() {
     </>
   );
 }
+
+
+
+
+
+
