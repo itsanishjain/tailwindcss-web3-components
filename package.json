@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mobiscroll/react-lite": "^4.10.9",
     "daisyui": "^2.2.0",
     "next": "^12.1.0",
     "react": "17.0.2",
